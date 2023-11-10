@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:calculator_app/app/all_screens.dart';
 
 class MyButton extends StatelessWidget {
   final String title;
@@ -8,7 +8,7 @@ class MyButton extends StatelessWidget {
   const MyButton({
     Key? key,
     required this.title,
-    this.color=const Color(0xffA5A5A5),
+    this.color = const Color(0xffA5A5A5),
     required this.onPress,
   }) : super(key: key);
 
@@ -17,8 +17,8 @@ class MyButton extends StatelessWidget {
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-vertical: 12,
-            ),
+          vertical: 12,
+        ),
         child: InkWell(
           onTap: onPress,
           child: Container(
@@ -29,12 +29,12 @@ vertical: 12,
             ),
             child: Center(
                 child: Text(
-                  title,
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                  ),
-                )),
+              title,
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+              ),
+            )),
           ),
         ),
       ),
